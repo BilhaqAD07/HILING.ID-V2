@@ -22,7 +22,7 @@ This app using redux-thunk on Profile Page with API to show IP and etc.
 
 #### Screenshot Hasil Pencarian Aplikasi
 <p align="center">
-    <img width="200px" src="/assets/SS_test.png">
+    <img width="720px" src="/assets/SS_test.png">
 </p>
 
 ## Repo Structure
