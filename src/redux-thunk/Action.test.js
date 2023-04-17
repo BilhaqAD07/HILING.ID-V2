@@ -15,20 +15,20 @@ const mockStore = configureMockStore([thunk]);
 describe("Actions", () => {
   let mockAxios;
   beforeEach(() => {
-    // membuat mock adapter sebelum dilakukan pengujain untuk axios
+    // Buat Mock Adapter sblm lakukan axios
     mockAxios = new MockAdapter(axios);
   });
 
   afterEach(() => {
-    // mengatur menjadi state awal axios ketika salah satu pengujian selesai
+    // Atur state awal setelah suatu testing selesai
     mockAxios.restore();
   });
-  it("Membuat aksi untuk permintaan pengambilan IP", () => {
+  it("Requesting user IP", () => {
     const expectedAction = { type: "FETCH_IP_REQUEST" };
     expect(fetchIPRequest()).toEqual(expectedAction);
   });
 
-  it("Membuat aksi untuk pengambilan IP berhasil", () => {
+  it("Requesting IP Successfull", () => {
     const data = { ip: "127.0.0.1" };
     const expectedAction = {
       type: "FETCH_IP_SUCCESS",
@@ -37,7 +37,7 @@ describe("Actions", () => {
     expect(fetchIPSuccess(data)).toEqual(expectedAction);
   });
 
-  it("Membuat aksi untuk pengambilan IP gagal", () => {
+  it("Requesting IP Failure", () => {
     const error = "Error fetching IP";
     const expectedAction = {
       type: "FETCH_IP_FAILURE",
@@ -46,7 +46,7 @@ describe("Actions", () => {
     expect(fetchIPFailure(error)).toEqual(expectedAction);
   });
 
-  it("Melakukan pengiriman aksi fetch IP ketika pengambilan IP berhasi", async () => {
+  it("Sending Fetch IP (Request IP Success)", async () => {
     const data = { ip: "127.0.0.1" };
     const mock = mockAxios.onGet("http://ip-api.com/json/").reply(200, data);
     const expectedActions = [
@@ -59,7 +59,7 @@ describe("Actions", () => {
     mock.restore();
   });
 
-  it("Melakukan pengiriman aksi fetch IP ketika pengambilan IP gagal", async () => {
+  it("Sending Fetch IP (Request IP Failure)", async () => {
     const error = "Request failed with status code 404";
     const response = { status: "fail", message: error };
     mockAxios.onGet("http://ip-api.com/json/1.1.1.1").replyOnce(404, response);
