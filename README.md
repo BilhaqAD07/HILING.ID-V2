@@ -29,10 +29,11 @@ This app using redux-thunk on Profile Page with API to show IP and etc.
 ```
 /
 ├─ assets/                  # All assets and screen
-├─ src/
-├─ └─ db/
+└─ datas/
+│      └─ logoPNG           # Airline logo 
 │      └─ Data.js           # Saved Flight Data 
 │      └─ logo.js           # Logo for picture load
+├─ src/
 ├─ └─ redux-thunk/
 │      └─ Actions.js        # Action File Fetch Redux Thunk
 │      └─ Actions.test.js   # Jest Testing Unit Action Fetch Redux Thunk
