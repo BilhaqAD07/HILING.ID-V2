@@ -20,7 +20,7 @@ This app using redux-thunk on Profile Page with API to show IP and etc.
     <img width="200px" src="/assets/SS_Tampilan4.jpg">
 </p>
 
-#### Screenshot Hasil Pencarian Aplikasi
+#### Screenshot Testing
 <p align="center">
     <img width="540px" src="/assets/SS_test.png">
 </p>
