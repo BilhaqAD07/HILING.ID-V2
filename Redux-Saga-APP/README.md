@@ -1,0 +1,100 @@
+# HILING.ID V.2 (MAKE YOUR FLIGHT EASIER!)
+
+---
+Download APP <a href="https://expo.dev/artifacts/eas/sow2znV8jqJ2pNXcDX8RaH.apk">HERE</a>.
+### Desc
+This app using redux-saga on Profile Page with API to show IP and etc.
+
+#### Screenshot Landing Page
+<p align="center">
+    <img width="200px" src="/assets/SS_Tampilan1.jpg">
+</p>
+
+#### Screenshot Searching Result
+<p align="center">
+    <img width="200px" src="/assets/SS_Tampilan2.jpg">
+</p>
+
+#### Screenshot Profile
+<p align="center">
+    <img width="200px" src="/assets/SS_Tampilan4.jpg">
+</p>
+
+#### Screenshot Testing
+<p align="center">
+    <img width="200px" src="/assets/SS_test.png">
+</p>
+
+## Repo Structure
+```
+/
+├─ assets/                  # All assets and screen
+└─ datas/
+│      └─ logoPNG           # Airline Logo 
+│      └─ Data.js           # Saved Flight Data 
+│      └─ logo.js           # Logo for picture load
+├─ src/
+├─ └─ redux-saga/
+│      └─ Actions.js        # Action File Fetch Redux Saga
+│      └─ Actions.test.js   # Jest Testing Unit Action Fetch Redux Saga
+│      └─ Reducer.js        # Reducer for state based on Action
+│      └─ store.js          # Middleware File Redux Saga
+│      └─ Saga.js           # Call API Data IP
+│      └─ types.js           # Define function
+│  └─ Detail.js             # Searching Results
+│  └─ Home.js               # Home Page (Landing Page)
+│  └─ Profile.js            # Profile Page
+│  └─ Api.js                # Fetching Data IP Function
+│  └─ rootReducer.js        # Combine Reducer with Data IP
+│
+├─ App.js                   # Rendering App
+├─ .gitattributes
+├─ .gitignore
+├─ README.md
+├─ app.json
+├─ babel.config.json
+├─ eas.json
+├─ jest.config.json
+├─ package-lock.json
+├─ package.json
+```
+
+## Requirements
+- [React native](https://reactnative.dev/)
+- [React native vector icon by MaterialComunityIcons](https://materialdesignicons.com/)
+- [Expo](https://expo.dev/)
+- Redux Saga
+- Jest
+- Redux Mock Store
+
+
+## Installation
+Run the following command below in project terminal root to build android apk
+```
+yarn install
+```
+or
+```
+npm install
+```
+&nbsp;
+Next is run the same function as git init inside expo
+```
+npx expo install expo-updates
+```
+&nbsp;
+Build inside expo
+```
+expo build:android
+```
+or
+```
+npm install -g eas-cli
+eas build -p android
+```
+&nbsp;
+Then wait and follow the instruction if it the first build, generate a new key and choose apk.Last if expo need login in terminal input same as your expo.dev account
+&nbsp;
+
+
+
