@@ -52,6 +52,7 @@ This app using redux-thunk on Profile Page with API to show IP and etc.
 ├─ jest.config.json
 ├─ package-lock.json
 ├─ package.json
+├─ yarn.lock
 ```
 
 ## Requirements
