@@ -7,22 +7,22 @@ This app using redux-thunk on Profile Page with API to show IP and etc.
 
 #### Screenshot Landing Page
 <p align="center">
-    <img width="200px" src="/assets/SS_Tampilan1.jpg">
+    <img width="200px" src="./assets/SS_Tampilan1.jpg">
 </p>
 
 #### Screenshot Searching Result
 <p align="center">
-    <img width="200px" src="/assets/SS_Tampilan2.jpg">
+    <img width="200px" src="./assets/SS_Tampilan2.jpg">
 </p>
 
 #### Screenshot Profile
 <p align="center">
-    <img width="200px" src="/assets/SS_Tampilan4.jpg">
+    <img width="200px" src="./assets/SS_Tampilan4.jpg">
 </p>
 
 #### Screenshot Testing
 <p align="center">
-    <img width="540px" src="/assets/SS_test.png">
+    <img width="540px" src="./assets/SS_test.png">
 </p>
 
 ## Repo Structure
